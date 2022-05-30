@@ -1,0 +1,22 @@
+.Cabecalho ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.Cabecalho li {
+  display: inline-block;
+  margin: 20px;
+}
+
+.Cabecalho a {
+  text-decoration: none;
+  color: black;
+}
+
+.Cabecalho a:hover,
+.Cabecalho a:active {
+  color: orange;
+}
