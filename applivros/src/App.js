@@ -1,12 +1,12 @@
-import { useState } from 'react';
 import {
-  BrowserRouter, Routes, Route, useNavigate, useLocation,
+  BrowserRouter, Routes, Route,
 } from 'react-router-dom';
 import Livros from './components/Livros/Livros';
 import NovoLivro from './components/NovoLivro/NovoLivro';
 import Cabecalho from './components/Cabecalho/Cabecalho';
 import BooksProvider from './context/BooksProvider';
 import './App.css';
+import AlterarLivro from './components/AlterarLivro/FormAlterarLivro';
 
 function App() {
   return (
@@ -17,6 +17,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Livros />} />
             <Route path="/novolivro" element={<NovoLivro />} />
+            <Route path="/alterarlivro/:id" element={<AlterarLivro />} />
             <Route
               path="*"
               element={

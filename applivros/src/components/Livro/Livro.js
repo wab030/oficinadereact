@@ -1,4 +1,5 @@
 import React, { useContext } from "react";
+import { useNavigate } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTrashCan, faPenToSquare } from '@fortawesome/free-solid-svg-icons'
 
@@ -9,8 +10,14 @@ import './Livro.css';
 
 const Livro = (props) => {
 
-  console.log(props);
-  const { alterarLivro, apagarLivro } = useContext(BooksContext);
+  const navigate = useNavigate();
+
+  const { apagarLivro } = useContext(BooksContext);
+
+  const altLivro = ( indice ) => {
+    console.log('Alterar livro');
+    navigate('/alterarlivro/'+indice);
+  }
 
   return (
     <div className="livro">
@@ -21,7 +28,7 @@ const Livro = (props) => {
         <p className="livro-titulo">{props.livro.nome}</p>
         <p>{props.livro.autor}</p>
         <p>{props.livro.paginas}</p>
-        <FontAwesomeIcon className="icon" icon={faPenToSquare} onClick={alterarLivro}/>
+        <FontAwesomeIcon className="icon" icon={faPenToSquare} onClick={() => altLivro(props.indice)} />
         <FontAwesomeIcon className="icon" icon={faTrashCan} color='red' onClick={() => apagarLivro(props.indice)} />
       </div>
     </div>

@@ -3,10 +3,9 @@ import Livro from '../Livro/Livro';
 
 import { BooksContext } from '../../context/BooksProvider';
 
-const Livros = (props) => {
+const Livros = () => {
 
   const { livros } = useContext(BooksContext);
-
 
   return (
     <div className='Livros'>

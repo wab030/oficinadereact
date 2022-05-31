@@ -69,8 +69,17 @@ const BooksProvider = (props) => {
 
   const alterarLivro = (event) => {
     event.preventDefault();
-    console.log('Altera livro');
-
+    const indiceLivro = event.target.id.value;
+    console.log(indiceLivro);
+    const livrosAux = [...livros];
+    livrosAux[indiceLivro] = {
+      nome: event.target.nome.value,
+      autor: event.target.autor.value,
+      paginas: event.target.paginas.value,
+      imagem: event.target.imagem.value,
+    };
+    setLivros(livrosAux);
+    navigate('/');
   }
 
   const apagarLivro = (index) => {
