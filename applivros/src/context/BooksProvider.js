@@ -1,11 +1,26 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { collection, getDocs } from "firebase/firestore";
+import { db } from '../data/env';
 export const BooksContext = React.createContext();
 
 const BooksProvider = (props) => {
   const [livros, setLivros] = useState([]);
 
   useEffect(() => {
+
+    async function fetchData(){
+      const querySnapshot = await getDocs(collection(db, "users"));
+      querySnapshot.forEach((doc) => {
+        console.log(`${doc.id} => ${doc.data()}`);
+      });
+    }
+
+    fetchData();
+  }, []);
+
+  useEffect(() => {
+
     setLivros(
       [
         {
