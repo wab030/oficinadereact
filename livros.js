@@ -1,38 +1,38 @@
-livros = [
+const books = [
   {
     id: 0,
-    nome: "A descoberta do mundo",
-    autor: "Clarice Lispector",
-    paginas: "480",
-    imagem:"https://m.media-amazon.com/images/I/61iz3UgVyJL.jpg"
+    name: "A descoberta do mundo",
+    author: "Clarice Lispector",
+    pages: 480,
+    image:"https://m.media-amazon.com/images/I/61iz3UgVyJL.jpg"
 
   },
   {
  id: 1,
-    nome: "Gênero e desigualdades",
-    autor: "Flávia Biroli",
-    paginas: "210",
-    imagem:"https://boitempo-img.f1cdn.com.br/resizer/view/900/900/false/true/542.jpg"
+    name: "Gênero e desigualdades",
+    author: "Flávia Biroli",
+    pages: 210,
+    image:"https://boitempo-img.f1cdn.com.br/resizer/view/900/900/false/true/542.jpg"
   },
   {
  id: 2,
-    nome: "A ditadura é assim",
-    autor: " Equipo Plantel",
-    paginas: "52",
-    imagem:"https://martinsfontespaulista.vteximg.com.br/arquivos/ids/200732-800-800/767022_ampliada.jpg?v=637266030488030000"
+    name: "A ditadura é assim",
+    author: " Equipo Plantel",
+    pages: 52,
+    image:"https://martinsfontespaulista.vteximg.com.br/arquivos/ids/200732-800-800/767022_ampliada.jpg?v=637266030488030000"
   },
   {
  id: 3,
-    nome: "Pequeno Manual Antirracista",
-    autor: "Djamila Ribeiro",
-    paginas: "136",
-    imagem:"https://images-na.ssl-images-amazon.com/images/I/71D3cAdm0GL.jpg"
+    name: "Pequeno Manual Antirracista",
+    author: "Djamila Ribeiro",
+    pages: 136,
+    image:"https://images-na.ssl-images-amazon.com/images/I/71D3cAdm0GL.jpg"
   }, 
   {
  id: 4,
-    nome: "Homofobia - História e crítica de um preconceito",
-    autor: "Daniel Borrillo",
-    paginas: "144",
-    imagem:"https://images-na.ssl-images-amazon.com/images/I/91AzPtbpRuL.jpg"
+    name: "Homofobia - História e crítica de um preconceito",
+    author: "Daniel Borrillo",
+    pages: 144,
+    image:"https://images-na.ssl-images-amazon.com/images/I/91AzPtbpRuL.jpg"
   }  
-]
+];
