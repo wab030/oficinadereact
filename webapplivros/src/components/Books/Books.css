@@ -1,0 +1,11 @@
+.Books {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.Books .Books-Book {
+  background-color: red;
+  margin-top: 35px;
+}

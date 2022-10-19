@@ -1,0 +1,21 @@
+.NewBook {
+  display: block;
+  margin: 0px 10px;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+
+.NewBook input {
+  font-size: 2rem;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  padding: 1rem;
+  display: block;
+}
+
+.NewBook button {
+  font-size: inherit;
+  display: block;
+  padding: 1rem;
+  margin: 1rem;
+}
