@@ -14,15 +14,17 @@ const Book = ({ book }) => {
 
   const navigate = useNavigate();
 
-  const updateBook = ( bookId ) => {
-    navigate('/alterarlivro/'+bookId);
+  const updateBook = (bookId) => {
+    navigate('/alterarlivro/' + bookId);
   }
 
   return (
     <div className="Book">
-      <h3>{book.name}</h3>
+      <div className="Book-Name-Container">
+        <h3>{book.name}</h3>
+      </div>
       <div className='Book-Image-Container'>
-        <Image image={book.image} alt="Texto alternativo" />
+        <Image image={book.image} alt={`Imagem da capa do livro ${book.name}`} />
       </div>
       <p>{book.author}</p>
       <p>{book.pages}</p>

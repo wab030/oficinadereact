@@ -8,7 +8,18 @@
   box-shadow: 5px 5px 7px #000;
 }
 
+.Book-Name-Container {
+  color: white;
+  background-color: #ccc;
+  width: 70%;
+  margin-top: -20px;
+  text-align: center;
+  background-image: linear-gradient(black, white);
+
+}
+
 .Book .Book-Image-Container {
+  margin-top: 20px;
   width: 50%;
 }
 
